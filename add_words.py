@@ -25,7 +25,7 @@ print('Ingresa 1 si deseas añadirlo al diccionario actual, de lo contrario ingr
 b = input()
 if b=="1":
     try:
-        filename = "C:\\Users\\Lenovo\\Documents\\HTMLDevF\\Proyectos-personales\\Proyecto-palabras\\api\\words.json"
+        filename = "./api/words.json"
         with open(filename, "r") as file:
             data = json.load(file)
         for newWord in arr:
