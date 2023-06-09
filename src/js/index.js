@@ -17,7 +17,7 @@ let n
 let word
 
 function getDataFromJSON(){
-    fetch('./words.json')
+    fetch('./api/words.json')
     .then(response => response.json())
     .then(data => normalizeData(data))
     .then(jsondata =>{
