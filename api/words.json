@@ -139,5 +139,136 @@
     "word": "counterfeit",
     "meaning": "Made in exact imitation of something valuable or important with the intention to deceive or defraud.",
     "spanish": "falsificacion"
+  },
+  {
+    "word": "rag",
+    "meaning": "A piece of old cloth, especially one torn from a larger piece, used typically for cleaning things.",
+    "spanish": "trapo"
+  },
+  {
+    "word": "wiper",
+    "meaning": "One of two long metal and rubber parts that move against a windscreen to remove rain.",
+    "spanish": "limpiaparabrisas"
+  },
+  {
+    "word": "perk",
+    "meaning": "Money, goods, or other benefit to which one is entitled as an employee or as a shareholder of a company.",
+    "spanish": "beneficios"
+  },
+  {
+    "word": "sewer",
+    "meaning": "An underground conduit for carrying off drainage water and waste matter.",
+    "spanish": "alcantarilla"
+  },
+  {
+    "word": "fidget",
+    "meaning": "Make small movements, especially of the hands and feet, through nervousness or impatience.",
+    "spanish": "agitarse"
+  },
+  {
+    "word": "blunt",
+    "meaning": "(Of a knife, pencil, etc.) having a worn-down edge or point; not sharp.",
+    "spanish": "desafilado"
+  },
+  {
+    "word": "sharp",
+    "meaning": "(Of an object) having an edge or point that is able to cut or pierce something.",
+    "spanish": "afilado"
+  },
+  {
+    "word": "hatch",
+    "meaning": "An opening of restricted size allowing for passage from one area to another.",
+    "spanish": "escotilla"
+  },
+  {
+    "word": "hatch",
+    "meaning": "(of an egg) open and produce a young animal.",
+    "spanish": "eclosionar"
+  },
+  {
+    "word": "loose",
+    "meaning": "Not firmly or tightly fixed in place; detached or able to be detached.",
+    "spanish": "suelto"
+  },
+  {
+    "word": "rinse",
+    "meaning": "Wash (something) with clean water to remove soap, detergent, dirt, or impurities.",
+    "spanish": "enjuagar"
+  },
+  {
+    "word": "nifty",
+    "meaning": "Particularly good, skillful, or effective.",
+    "spanish": "habil"
+  },
+  {
+    "word": "shopkeeper",
+    "meaning": "The owner and manager of a shop.",
+    "spanish": "tendero"
+  },
+  {
+    "word": "taunting",
+    "meaning": "Intended to provoke someone in an insulting or contemptuous manner.",
+    "spanish": "burlarse"
+  },
+  {
+    "word": "telltale",
+    "meaning": "Revealing, indicating, or betraying something.",
+    "spanish": "indicador"
+  },
+  { "word": "snitch", "meaning": "An informer.", "spanish": "soplon" },
+  {
+    "word": "barn",
+    "meaning": "A large farm building used for storing grain, hay, or straw or for housing livestock.",
+    "spanish": "granero"
+  },
+  {
+    "word": "livestock",
+    "meaning": "Farm animals regarded as an asset.",
+    "spanish": "ganado"
+  },
+  {
+    "word": "burden",
+    "meaning": "A load, typically a heavy one.",
+    "spanish": "carga"
+  },
+  {
+    "word": "cattle",
+    "meaning": "Large ruminant animals with horns and cloven hoofs, domesticated for meat or milk, or as beasts of burden; cows.",
+    "spanish": "ganado"
+  },
+  {
+    "word": "hinge",
+    "meaning": "A movable joint or mechanism on which a door, gate, or lid swings as it opens and closes or which connects linked objects.",
+    "spanish": "bisagra"
+  },
+  {
+    "word": "tailgate",
+    "meaning": "A hinged flap at the back of a truck that can be lowered or removed when loading or unloading the vehicle.",
+    "spanish": "porton"
+  },
+  {
+    "word": "barrette",
+    "meaning": "A small, decorative piece of plastic, metal, or wood that a woman or girl wears in her hair, often to stop it falling in front of her face.",
+    "spanish": "pasador"
+  },
+  {
+    "word": "depletion",
+    "meaning": "Reduction in the number or quantity of something.",
+    "spanish": "agotamiento"
+  },
+  {
+    "word": "lease",
+    "meaning": "A contract by which one party conveys land, property, services, etc. to another for a specified time, usually in return for a periodic payment.",
+    "spanish": "alquiler"
+  },
+  {
+    "word": "naive",
+    "meaning": "(of a person or action) showing a lack of experience, wisdom, or judgment.",
+    "spanish": "ingenuo"
+  },
+  {
+    "word": "tailgate",
+    "meaning": "Drive too closely behind (another vehicle).",
+    "spanish": "ir a rebufo"
   }
 ]
