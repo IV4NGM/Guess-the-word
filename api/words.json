@@ -1,1 +1,138 @@
-[{"word": "pear", "meaning": "Green fruit.", "spanish": "pera"}, {"word": "apple", "meaning": "Red fruit.", "spanish": "manzana"}, {"word": "pineapple", "meaning": "Yellow fruit.", "spanish": "pina"}, {"word": "car", "meaning": "Vehicle with 4 wheels.", "spanish": "carro"}, {"word": "dog", "meaning": "Barking animal.", "spanish": "perro"}, {"word": "tug", "meaning": "Pull something hard or suddenly.", "spanish": "tiron"}, {"word": "bouquet", "meaning": "An attractively arranged bunch of flowers.", "spanish": "ramo"}, {"word": "lawn", "meaning": "Area of short, mown grass in a yard, garden or park.", "spanish": "cesped"}, {"word": "mown", "meaning": "(Of grass or a crop) cut down with a machine.", "spanish": "segado"}, {"word": "cuddle", "meaning": "Hold close in one's arms as a way of showing love or affection.", "spanish": "acurrucarse"}, {"word": "caress", "meaning": "Touch or stroke gently or lovingly.", "spanish": "acariciar"}, {"word": "divert", "meaning": "Cause (someone or something) to change course or turn from one direction to another.", "spanish": "desviar"}, {"word": "fowl", "meaning": "A bird of the order galliformes that is kept for its eggs and flesh; a rooster or hen.", "spanish": "ave"}, {"word": "poultry", "meaning": "Domestic fowl, such as chickens, turkeys, ducks, and geese.", "spanish": "aves de corral"}, {"word": "forgery", "meaning": "The action of forging or producing a copy of a document, signature or work of art.", "spanish": "falsificar"}, {"word": "quip", "meaning": "A witty remark.", "spanish": "broma"}, {"word": "skim", "meaning": "Remove (a substance) from the surface of a liquid.", "spanish": "desnatar"}, {"word": "quill", "meaning": "Any of the main wing or tail feathers of a bird.", "spanish": "pluma"}, {"word": "glide", "meaning": "Move with a smooth continuous motion, typically with little noise.", "spanish": "planear"}, {"word": "cunning", "meaning": "Having or showing skill in achieving one's ends by deceit or evasion.", "spanish": "astucia"}, {"word": "dexterity", "meaning": "Skill in performing tasks, especially with the hands.", "spanish": "destreza"}, {"word": "sleight", "meaning": "The use of dexterity or cunning, especially so as to deceive.", "spanish": "artimanas"}, {"word": "quaint", "meaning": "Attractively unusual or old-fashioned.", "spanish": "pintoresco"}, {"word": "pit", "meaning": "A large hole in the ground.", "spanish": "fosa"}, {"word": "quarry", "meaning": "A place, typically a large, deep pit, from which stone or other materials are extracted.", "spanish": "cantera"}, {"word": "scamp", "meaning": "A person, especially a child, who is mischievous in a likable or amusing way.", "spanish": "picaro"}, {"word": "sorcerer", "meaning": "A person who claims or is believed to have magic powers; a wizard.", "spanish": "hechicero"}, {"word": "strand", "meaning": "Leave (someone) without the means to move from somewhere.", "spanish": "varar"}, {"word": "stingy", "meaning": "Unwilling to give or spend; ungenerous.", "spanish": "tacano"}, {"word": "mat", "meaning": "A piece of coarse material placed on a floor for people to wipe their feet on.", "spanish": "estera"}, {"word": "scythe", "meaning": "A tool used for cutting crops such as grass or wheat, with a long curved blade at the end of a long pole.", "spanish": "guadana"}]
+[
+  { "word": "pear", "meaning": "Green fruit.", "spanish": "pera" },
+  { "word": "apple", "meaning": "Red fruit.", "spanish": "manzana" },
+  { "word": "pineapple", "meaning": "Yellow fruit.", "spanish": "pina" },
+  { "word": "car", "meaning": "Vehicle with 4 wheels.", "spanish": "carro" },
+  { "word": "dog", "meaning": "Barking animal.", "spanish": "perro" },
+  {
+    "word": "tug",
+    "meaning": "Pull something hard or suddenly.",
+    "spanish": "tiron"
+  },
+  {
+    "word": "bouquet",
+    "meaning": "An attractively arranged bunch of flowers.",
+    "spanish": "ramo"
+  },
+  {
+    "word": "lawn",
+    "meaning": "Area of short, mown grass in a yard, garden or park.",
+    "spanish": "cesped"
+  },
+  {
+    "word": "mown",
+    "meaning": "(Of grass or a crop) cut down with a machine.",
+    "spanish": "segado"
+  },
+  {
+    "word": "cuddle",
+    "meaning": "Hold close in one's arms as a way of showing love or affection.",
+    "spanish": "acurrucarse"
+  },
+  {
+    "word": "caress",
+    "meaning": "Touch or stroke gently or lovingly.",
+    "spanish": "acariciar"
+  },
+  {
+    "word": "divert",
+    "meaning": "Cause (someone or something) to change course or turn from one direction to another.",
+    "spanish": "desviar"
+  },
+  {
+    "word": "fowl",
+    "meaning": "A bird of the order galliformes that is kept for its eggs and flesh; a rooster or hen.",
+    "spanish": "ave"
+  },
+  {
+    "word": "poultry",
+    "meaning": "Domestic fowl, such as chickens, turkeys, ducks, and geese.",
+    "spanish": "aves de corral"
+  },
+  {
+    "word": "forgery",
+    "meaning": "The action of forging or producing a copy of a document, signature or work of art.",
+    "spanish": "falsificar"
+  },
+  { "word": "quip", "meaning": "A witty remark.", "spanish": "broma" },
+  {
+    "word": "skim",
+    "meaning": "Remove (a substance) from the surface of a liquid.",
+    "spanish": "desnatar"
+  },
+  {
+    "word": "quill",
+    "meaning": "Any of the main wing or tail feathers of a bird.",
+    "spanish": "pluma"
+  },
+  {
+    "word": "glide",
+    "meaning": "Move with a smooth continuous motion, typically with little noise.",
+    "spanish": "planear"
+  },
+  {
+    "word": "cunning",
+    "meaning": "Having or showing skill in achieving one's ends by deceit or evasion.",
+    "spanish": "astucia"
+  },
+  {
+    "word": "dexterity",
+    "meaning": "Skill in performing tasks, especially with the hands.",
+    "spanish": "destreza"
+  },
+  {
+    "word": "sleight",
+    "meaning": "The use of dexterity or cunning, especially so as to deceive.",
+    "spanish": "artimanas"
+  },
+  {
+    "word": "quaint",
+    "meaning": "Attractively unusual or old-fashioned.",
+    "spanish": "pintoresco"
+  },
+  {
+    "word": "pit",
+    "meaning": "A large hole in the ground.",
+    "spanish": "fosa"
+  },
+  {
+    "word": "quarry",
+    "meaning": "A place, typically a large, deep pit, from which stone or other materials are extracted.",
+    "spanish": "cantera"
+  },
+  {
+    "word": "scamp",
+    "meaning": "A person, especially a child, who is mischievous in a likable or amusing way.",
+    "spanish": "picaro"
+  },
+  {
+    "word": "sorcerer",
+    "meaning": "A person who claims or is believed to have magic powers; a wizard.",
+    "spanish": "hechicero"
+  },
+  {
+    "word": "strand",
+    "meaning": "Leave (someone) without the means to move from somewhere.",
+    "spanish": "varar"
+  },
+  {
+    "word": "stingy",
+    "meaning": "Unwilling to give or spend; ungenerous.",
+    "spanish": "tacano"
+  },
+  {
+    "word": "mat",
+    "meaning": "A piece of coarse material placed on a floor for people to wipe their feet on.",
+    "spanish": "estera"
+  },
+  {
+    "word": "scythe",
+    "meaning": "A tool used for cutting crops such as grass or wheat, with a long curved blade at the end of a long pole.",
+    "spanish": "guadana"
+  },
+  {
+    "word": "crop",
+    "meaning": "A cultivated plant that is grown as food, especially a grain, fruit or vegetable.",
+    "spanish": "cultivo"
+  }
+]
