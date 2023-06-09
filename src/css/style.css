@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    background-color: #caf0f8;
+}
+
+h1{
+    color: #03045e;
+}
+
+.mdl-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hint-image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    background: no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921);
+}
+
+#guess{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#meaning{
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 5px 20px 5px;
+}
+
+.translation{
+    margin-top: 20px;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+}
+
+.translation > p{
+    font-size: 16px;
+}
+
+#spanish{
+    display: none;
+}
+
+.show-text{
+    display: block !important;
+    margin-left: 20px;
+}
+
+#translation-text{
+    font-weight: bold;
+    color: #0077b6;
+}
+
+#translation-text:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.letters{
+    display: flex;
+    flex-direction: row;
+}
+
+.letter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /* background-color: rgb(220, 220, 220); */
+    background-color: white;
+    box-shadow: inset 0px 0px 5px 0px rgb(220, 220, 220);
+    border: 1px solid rgb(179, 179, 179);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #023e8a;
+    text-transform: uppercase;
+}
+
+.letter:hover{
+    cursor: pointer;
+}
