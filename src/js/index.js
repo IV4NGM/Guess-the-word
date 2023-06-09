@@ -17,7 +17,7 @@ let n
 let word
 
 function getDataFromJSON(){
-    fetch('https://github.com/IV4NGM/Guess-the-word/blob/develop/api/words.json')
+    fetch('./words.json')
     .then(response => response.json())
     .then(data => normalizeData(data))
     .then(jsondata =>{
