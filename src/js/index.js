@@ -15,6 +15,7 @@ function normalizeData(dataArray){
 
 let n
 let word
+let currentIndex = 0
 
 function getDataFromJSON(){
     fetch('./api/words.json')
@@ -23,7 +24,8 @@ function getDataFromJSON(){
     .then(jsondata =>{
         words = jsondata
         n = words.length
-        word = randomWord(n)
+        shuffleArray(words)
+        word = nextWord()
         document.querySelector("#translation-text").addEventListener("click", function(){
             document.querySelector("#spanish").classList.toggle("show-text")
         })
@@ -63,9 +65,10 @@ function getDataFromJSON(){
 
 getDataFromJSON()
 
-function randomWord(n){
+function nextWord(){
     lettersArray = []
-    index = Math.floor(Math.random() * n)
+    let index = currentIndex % words.length
+    currentIndex++
     document.querySelector("#spanish").textContent = words[index].spanish
     document.querySelector("#meaning").textContent = words[index].meaning
     document.querySelector("#image").src = ""
@@ -81,28 +84,45 @@ function randomWord(n){
         })
         document.querySelector("#letters-container").appendChild(newPar)
     }
-    // const verifyButton = document.createElement("button")
-    // verifyButton.textContent = "Verificar"
-    // verifyButton.classList.add("mdl-button", "mdl-js-button", "mdl-button--raised", "mdl-button--colored")
-    // let input = document.querySelector("#guess")
-    // input.parentNode.insertBefore(verifyButton, input.nextSibling)
-    // verifyButton.addEventListener("click", function(){
-    //     validar(words[index].word, verifyButton)
-    // })
     return words[index].word
+}
+
+// function randomWord(n){
+//     lettersArray = []
+//     index = Math.floor(Math.random() * n)
+//     document.querySelector("#spanish").textContent = words[index].spanish
+//     document.querySelector("#meaning").textContent = words[index].meaning
+//     document.querySelector("#image").src = ""
+//     document.querySelector("#image").src = "https://source.unsplash.com/200x200/?" + words[index].word
+//     for (let i = 0; i < (words[index].word).length; i++){
+//         lettersArray.push("")
+//         const newPar = document.createElement("p")
+//         newPar.classList.add("letter")
+//         newPar.setAttribute("id", "letter_" + i)
+//         newPar.addEventListener("click", function(){
+//             lettersArray[i] = ""
+//             newPar.textContent = ""
+//         })
+//         document.querySelector("#letters-container").appendChild(newPar)
+//     }
+//     return words[index].word
+// }
+
+function correctlyGuessed(){
+    alert("Congratulations, you guessed!")
+    document.querySelector("#guess").value = ""
+    document.querySelector("#textFieldContainer").classList.remove("is-dirty")
+    document.querySelectorAll(".letter").forEach(p => p.remove())
+    word = nextWord()
+    if (document.querySelector("#spanish").classList.contains("show-text")){
+        document.querySelector("#spanish").classList.toggle("show-text")
+    }
 }
 
 document.querySelector("#validateButton").addEventListener("click", function(){
     let inputText = document.querySelector("#guess").value
     if (inputText.trim().toLocaleLowerCase() == word){
-        alert("Congratulations, you guessed!")
-        document.querySelector("#guess").value = ""
-        document.querySelector("#textFieldContainer").classList.remove("is-dirty")
-        document.querySelectorAll(".letter").forEach(p => p.remove())
-        word = randomWord(n)
-        if (document.querySelector("#spanish").classList.contains("show-text")){
-            document.querySelector("#spanish").classList.toggle("show-text")
-        }
+        correctlyGuessed()
     } else {
         alert("Ups, try again!")
     }
@@ -117,15 +137,17 @@ document.querySelector("#guess").addEventListener("keypress", function(event){
 
 function checkGuess(wordToGuess){
     if (lettersArray.join('')==wordToGuess){
-        alert("Congratulations, you guessed!")
-        document.querySelector("#guess").value = ""
-        document.querySelector("#textFieldContainer").classList.remove("is-dirty")
-        document.querySelectorAll(".letter").forEach(p => p.remove())
-        word = randomWord(n)
-        if (document.querySelector("#spanish").classList.contains("show-text")){
-            document.querySelector("#spanish").classList.toggle("show-text")
-        }
+        correctlyGuessed()
     } else {
         alert("Ups, try again!")
+    }
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
     }
 }
