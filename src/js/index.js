@@ -81,7 +81,7 @@ function randomWord(n){
 
 document.querySelector("#validateButton").addEventListener("click", function(){
     let inputText = document.querySelector("#guess").value
-    if (inputText == word){
+    if (inputText.trim().toLocaleLowerCase() == word){
         alert("Congratulations, you guessed!")
         document.querySelector("#guess").value = ""
         document.querySelector("#textFieldContainer").classList.remove("is-dirty")
