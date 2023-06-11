@@ -23,8 +23,11 @@ h1{
     background: no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921);
 }
 
+.mdl-textfield{
+    width: 200px;
+}
+
 #guess{
-    margin-bottom: 15px;
     font-size: 18px;
 }
 
@@ -99,4 +102,16 @@ h1{
 
 .letter:hover{
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    #letters-container {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .input-div {
+        display: none;
+    }
 }

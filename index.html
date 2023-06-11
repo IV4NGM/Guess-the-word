@@ -15,7 +15,7 @@
     <h1>Guess the word</h1>
     <div class="mdl-card mdl-shadow--2dp">
         <p id="meaning"></p>
-        <img src="" alt="" id="image" class="hint-image">
+        <img src="" alt="Hint image" id="image" class="hint-image">
         <div class="translation">
             <p id="translation-text">Translation</p>
             <p id="spanish"></p>
@@ -27,9 +27,13 @@
         <p class="letter">S</p>
         <p class="letter">A</p> -->
     </div>
-    <!-- <div class="input-div">
-        <input type="text" id="guess">
-    </div> -->
+    <div class="input-div">
+        <div class="mdl-textfield mdl-js-textfield" id="textFieldContainer">
+            <input class="mdl-textfield__input" type="text" id="guess">
+            <label class="mdl-textfield__label" for="guess">Word</label>
+        </div>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="validateButton">Verificar</button>
+    </div>
     <script src="./src/js/index.js"></script>
 </body>
 </html>

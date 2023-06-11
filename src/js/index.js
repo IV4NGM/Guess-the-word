@@ -28,19 +28,21 @@ function getDataFromJSON(){
             document.querySelector("#spanish").classList.toggle("show-text")
         })
         document.addEventListener("keypress", function(event){
-            if(/^[a-z]$/i.test(event.key)){
-                for (let i = 0; i < lettersArray.length; i++){
-                    if (lettersArray[i]==""){
-                        lettersArray[i] = event.key.toLocaleLowerCase()
-                        document.querySelector("#letter_" + i.toString()).textContent = event.key.toLocaleLowerCase()
-                        break
+            if (window.matchMedia("(min-width: 601px)").matches) {
+                if(/^[a-z]$/i.test(event.key)){
+                    for (let i = 0; i < lettersArray.length; i++){
+                        if (lettersArray[i]==""){
+                            lettersArray[i] = event.key.toLocaleLowerCase()
+                            document.querySelector("#letter_" + i.toString()).textContent = event.key.toLocaleLowerCase()
+                            break
+                        }
                     }
+                    setTimeout(function(){
+                        if (!lettersArray.includes("")){
+                            checkGuess(word)
+                        }
+                    }, 50)
                 }
-                setTimeout(function(){
-                    if (!lettersArray.includes("")){
-                        checkGuess(word)
-                    }
-                }, 50)
             }
         })
     })
@@ -77,18 +79,28 @@ function randomWord(n){
     return words[index].word
 }
 
-// function validar(word, button){
-//     let inputText = document.querySelector("#guess").value
-//     if (inputText == word){
-//         alert("Congratulations, you guessed!")
-//         document.querySelector("#guess").value = ""
-//         button.remove()
-//         document.querySelectorAll(".letter").forEach(p => p.remove())
-//         randomWord(n)
-//     } else {
-//         alert("Ups, try again!")
-//     }
-// }
+document.querySelector("#validateButton").addEventListener("click", function(){
+    let inputText = document.querySelector("#guess").value
+    if (inputText == word){
+        alert("Congratulations, you guessed!")
+        document.querySelector("#guess").value = ""
+        document.querySelector("#textFieldContainer").classList.remove("is-dirty")
+        document.querySelectorAll(".letter").forEach(p => p.remove())
+        word = randomWord(n)
+        if (document.querySelector("#spanish").classList.contains("show-text")){
+            document.querySelector("#spanish").classList.toggle("show-text")
+        }
+    } else {
+        alert("Ups, try again!")
+    }
+})
+
+document.querySelector("#guess").addEventListener("keypress", function(event){
+    if (event.key == "Enter"){
+        event.stopPropagation()
+        document.querySelector("#validateButton").click();
+    }
+})
 
 function checkGuess(wordToGuess){
     if (lettersArray.join('')==wordToGuess){
