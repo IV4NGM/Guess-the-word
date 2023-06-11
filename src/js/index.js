@@ -105,6 +105,8 @@ document.querySelector("#guess").addEventListener("keypress", function(event){
 function checkGuess(wordToGuess){
     if (lettersArray.join('')==wordToGuess){
         alert("Congratulations, you guessed!")
+        document.querySelector("#guess").value = ""
+        document.querySelector("#textFieldContainer").classList.remove("is-dirty")
         document.querySelectorAll(".letter").forEach(p => p.remove())
         word = randomWord(n)
         if (document.querySelector("#spanish").classList.contains("show-text")){
