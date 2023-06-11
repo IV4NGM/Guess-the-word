@@ -29,7 +29,7 @@ function getDataFromJSON(){
         })
         document.addEventListener("keypress", function(event){
             if (window.matchMedia("(min-width: 601px)").matches) {
-                if(/^[a-z]$/i.test(event.key)){
+                if (/^[a-z]$/i.test(event.key)){
                     for (let i = 0; i < lettersArray.length; i++){
                         if (lettersArray[i]==""){
                             lettersArray[i] = event.key.toLocaleLowerCase()
@@ -42,6 +42,19 @@ function getDataFromJSON(){
                             checkGuess(word)
                         }
                     }, 50)
+                }
+            }
+        })
+        document.addEventListener("keydown", function(event){
+            if (window.matchMedia("(min-width: 601px)").matches) {
+                if (event.key == "Backspace"){
+                    for (let i = lettersArray.length - 1; i>=0; i--){
+                        if (lettersArray[i]!=""){
+                            lettersArray[i] = ""
+                            document.querySelector("#letter_" + i.toString()).textContent = ""
+                            break
+                        }
+                    }
                 }
             }
         })
