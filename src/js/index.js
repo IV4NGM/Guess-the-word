@@ -72,7 +72,8 @@ function nextWord(){
     document.querySelector("#spanish").textContent = words[index].spanish
     document.querySelector("#meaning").textContent = words[index].meaning
     document.querySelector("#image").src = ""
-    document.querySelector("#image").src = "https://source.unsplash.com/200x200/?" + words[index].word
+    // document.querySelector("#image").src = "https://source.unsplash.com/200x200/?" + words[index].word
+    document.querySelector("#image").src = "https://loremflickr.com/200/200/" + words[index].word
     for (let i = 0; i < (words[index].word).length; i++){
         lettersArray.push("")
         const newPar = document.createElement("p")
